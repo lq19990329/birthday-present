@@ -1,0 +1,94 @@
+body{
+    background: #000;
+    width: 100%;
+    height: 100%;
+}
+
+#canvas{
+    position: absolute;
+    z-index: -3;
+    top:0;
+    left: 0;
+}
+#lrcbox{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    
+}
+#lrc{
+    transition: all ease .4s;
+    transform: translateY(50px);
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-family:Helvetica;
+    color: white;
+}
+#control{
+    position: absolute;
+    display: none;
+    right: 0;
+    top:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-size: 40px 40px;
+}
+.play{
+    background-image: url(./images/play.png)
+}
+.pause{
+    background-image: url(./images/pause.png)
+}
+#box{
+    width: 120px;
+    height: 120px;
+    margin:100px auto; 
+    /* animation:abc 5s linear infinite; */
+    position: relative;
+    transform-style:preserve-3d;
+    transition: all ease .4s
+}
+#box:hover{
+    animation-play-state: paused;
+}
+
+#box div{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size:cover; 
+    -webkit-box-shadow:0 0 100px #f699b4;
+    opacity: 1;
+}
+.front{
+    transform:translateZ(80px);
+    background: url(./images/1.jpg) 0 45%;
+
+}
+.back{
+    transform:translateZ(-80px);
+    background: url(./images/2.jpg) 0 30%;
+}
+.left{
+    transform:translateX(-80px) rotateY(90deg);
+    background: url(./images/3.jpg);
+}
+.right{
+    transform:translateX(80px) rotateY(90deg);
+    background: url(./images/4.jpg) 0 60%;
+}
+.top{
+    transform:translateY(-80px) rotateX(90deg);
+    background: url(./images/5.png);
+}
+#box>.bottom {
+    transform:translateY(80px) rotateX(90deg);
+    background: url(./images/6.png) ;
+    background-size: 120px 120px;
+}
