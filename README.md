@@ -10,5 +10,5 @@
 ### 立方体任意方向转动
 ### 立方体转动时星空背景同时移动
 ### 原生JS处理歌词
-![Image text](https://raw.githubusercontent.com/lq19990329/birthday-present/master/images/md.jpg)
-![Image text](https://raw.githubusercontent.com/lq19990329/birthday-present/master/images/md1.jpg)
+![Image text](https://raw.githubusercontent.com/lq19990329/birthday-present/master/images/md.png)
+![Image text](https://raw.githubusercontent.com/lq19990329/birthday-present/master/images/md1.png)
